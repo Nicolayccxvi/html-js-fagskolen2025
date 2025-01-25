@@ -1,0 +1,26 @@
+body 
+{
+    color: black;
+    background: black;
+}
+
+.header
+{
+    background-color: lightgray; 
+}
+
+.meny
+{
+    background-color: lightblue; 
+}
+
+.hovedinnhold
+{
+    background-color: lightgreen;  
+}
+
+.footer
+{
+    background-color: lightpink;
+    
+}
