@@ -1,26 +1,48 @@
 body 
 {
-    color: black;
-    background: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
 }
 
-.header
+.container 
 {
-    background-color: lightgray; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas:
+        "header header"
+        "meny hovedinnhold"
+        "footer footer";
+    height: 100vh;
 }
 
-.meny
+.header 
 {
-    background-color: lightblue; 
+    grid-area: header;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
 }
 
-.hovedinnhold
+.meny 
 {
-    background-color: lightgreen;  
+    grid-area: meny;
+    background-color: lightblue;
+    padding: 10px;
 }
 
-.footer
+.hovedinnhold 
 {
+    grid-area: hovedinnhold;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.footer 
+{
+    grid-area: footer;
     background-color: lightpink;
-    
+    text-align: center;
+    padding: 10px;
 }
