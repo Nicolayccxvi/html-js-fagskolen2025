@@ -1,0 +1,31 @@
+
+body
+{
+    background-color: black;
+    color: black;
+
+}
+
+h1 
+{
+    color: rebeccapurple;
+    background-color: yellow;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: verdana;
+    border: solid;
+
+}
+
+p 
+{
+    color: red;
+    text-align: center;
+    background-color: chartreuse;
+    padding: 50px;
+    margin: 50px;
+    border: dashed;
+}
+
