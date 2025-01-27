@@ -20,29 +20,37 @@ body
 .header 
 {
     grid-area: header;
-    background-color: lightgray;
+    background-color: #4A158C;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    border-bottom: 3px solid #FFD700;
 }
 
 .meny 
 {
     grid-area: meny;
-    background-color: lightblue;
-    padding: 10px;
+    background-color: #0B3D91;
+    color: white;
+    padding: 12px;
+    border-right: 3px solid #F8F1E8;
 }
 
 .hovedinnhold 
 {
     grid-area: hovedinnhold;
-    background-color: lightgreen;
-    padding: 10px;
+    background-color: #F8F1E8;
+    color: #333;
+    padding: 12px;
+    border-left: 3px solid #0B3D91;
 }
 
 .footer 
 {
     grid-area: footer;
-    background-color: lightpink;
+    background-color: #1B1B1B;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    border-top: 3px solid #FFD700;
 }
