@@ -1,4 +1,8 @@
-input[type='range']{ accent-color: yellow; }
+input[type='range']{ accent-color: gold; }
+input[type='number']{ color: gold; background-color: gray; } 
+input[type='text']{ color: gold; background-color: gray; }
+input[type='radio']{ accent-color: gold; }
+
 body
 {
     margin:0;
@@ -13,7 +17,7 @@ body
 
 h3
 {
-    color: yellow;
+    color: gold;
     text-align: center;
     font-size: 66px;
 }
@@ -31,7 +35,7 @@ h3
     font-size: 16px;
     border: solid;
     border-width: 2px;
-    border-color: yellow;
+    border-color: gold;
     display: flex;
     flex-direction: column;
     flex: 1; 
