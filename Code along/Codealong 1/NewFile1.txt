@@ -1,0 +1,5 @@
+jeg vill ha en div firkant.
+
+2 knapper en bredere og en høyere.
+
+...
