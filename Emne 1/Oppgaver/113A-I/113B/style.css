@@ -1,0 +1,18 @@
+h1
+{
+    color: blue;
+    border: solid 2px orange;
+    
+}
+
+h2
+{
+    color: green;
+    border: dotted 2px blue;
+}
+
+h3
+{
+    color: orange;
+    border: double 2px green;
+}
