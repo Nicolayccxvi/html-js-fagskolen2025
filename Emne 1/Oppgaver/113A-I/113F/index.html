@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCXVI</title>
+    <style>
+        body 
+        {
+            margin: 20px;
+            padding: 20px;
+            background-color: black;
+        }
+        form
+        {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label
+        {
+            font-weight: bold;
+        }
+        .form-group
+        {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>skjema</h2>
+
+    
+    <div class="form-group">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    
+    <div class="form-group">
+        <label>Kjønn:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Mann</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kvinne</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Annet</label>
+    </div>
+
+    
+    <div class="form-group">
+        <label>Interesser:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">psykologi</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">finans</label><br>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">koding</label>
+    </div>
+
+    
+    <button type="submit">Send inn</button>
+</form>
+
+</body>
+</html>
