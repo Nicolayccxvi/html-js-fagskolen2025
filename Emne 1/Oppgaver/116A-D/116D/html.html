@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<script>
+    
+let kort1 = null;  // Husker første kortet
+let kort2 = null; // Husker andre kortet
+
+function revealCard(id, imgFileName) {
+let kort = document.getElementById(id); // Finn kortet som ble trykket
+kort.innerHTML = `<img src="/img/${imgFileName}.jpg"/>`; // Vis bildet
+
+if (kort1 === null) {
+// Hvis vi ikke har trykket på et kort før, lagre dette kortet
+kort1 = kort;
+} else {
+// Hvis vi allerede har trykket på ett kort, lagre dette som kort nr. 2
+kort2 = kort;
+
+</script>
+
+
+
+$END$
+</body>
+</html>
