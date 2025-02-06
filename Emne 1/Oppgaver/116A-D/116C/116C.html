@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCXVI</title>
+
+</head>
+
+<body>
+
+
+
+<div id="container">
+    <div id="k3">Du er utenfor en leilighet.</div>
+    <button id="knappgang" onclick="gangen()">Gå inn</button>
+</div>
+
+
+<script>
+    function gangen() {
+
+        document.getElementById("container").innerHTML = "<div id=\"k3\" >Du er i gangen.</div> <button onclick='badet()'>badet</button> <button onclick='stua()'>stua</button> <button onclick='kjøkken()'>kjøkken</button> <button onclick='soverommet()'>soverom</button>";
+
+
+    }
+
+    function soverommet() {
+
+        document.getElementById("container").innerHTML = "<div id=\"k3\" >Du er på soverommet.</div> <button onclick='gangen()'>gangen</button>";
+
+    }
+
+    function stua() {
+
+        document.getElementById("container").innerHTML = "<div id=\"k3\" >Du er i stua.</div> <button onclick='gangen()'>gangen</button>";
+
+    }
+
+    function badet() {
+
+        document.getElementById("container").innerHTML = "<div id=\"k3\" >Du er på badet.</div> <button onclick='gangen()'>gangen</button>";
+
+    }
+
+    function kjøkken() {
+
+        document.getElementById("container").innerHTML = "<div id=\"k3\" >Du er på kjøkkenet.</div> <button onclick='gangen()'>gangen</button>";
+
+    }
+</script>
+
+
+</body>
+</html>
