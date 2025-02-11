@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCXVI</title>
+</head>
+
+<body>
+
+<label for="xValue">X</label>
+<input type="number" id="xValue" value="100">
+<br>
+
+<label for="yValue">Y</label>
+<input type="number" id="yValue" value="100">
+<br>
+
+<label for="bgColor">Backroundcolor:</label>
+<select id="bgColor">
+    <option value="red">Rød</option>
+    <option value="green">Grønn</option>
+    <option value="blue">Blå</option>
+    <option value="gray">Grå</option>
+</select>
+<br>
+
+<label for="fgColor">foregroundcolor:</label>
+<select id="fgColor">
+    <option value="yellow">Gul</option>
+    <option value="white">Hvit</option>
+    <option value="black">Svart</option>
+    <option value="pink">Rosa</option>
+</select>
+<br>
+
+<button onclick="addCircle()">Legg til sirkel</button>
+<button onclick="addRectangle()">Legg til firkant</button>
+<br>
+
+<svg id="mySvg" width="800" height="600" style="background-color: lightgray;"></svg>
+
+<script>
+    function getInputValues() {
+        return {
+            x: document.getElementById('xValue').value || 100,
+            y: document.getElementById('yValue').value || 100,
+            bgColor: document.getElementById('bgColor').value,
+            fgColor: document.getElementById('fgColor').value
+        };
+    }
+
+    function addCircle() {
+        const { x, y, bgColor, fgColor } = getInputValues();
+        document.getElementById('mySvg').innerHTML += `
+                <circle cx="${x}" cy="${y}" r="40" stroke="${bgColor}" stroke-width="4" fill="${fgColor}" />
+            `;
+    }
+
+    function addRectangle() {
+        const { x, y, bgColor, fgColor } = getInputValues();
+        document.getElementById('mySvg').innerHTML += `
+                <rect x="${x}" y="${y}" width="80" height="60" stroke="${bgColor}" stroke-width="4" fill="${fgColor}" />
+            `;
+    }
+</script>
+
+</body>
+
+</html>
