@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCXVI</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    th {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+</style>
+
+<body>
+
+<table id="myTable" border="1">
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Alder</th>
+        <th>By</th>
+        <th>Yrke</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+</table>
+
+<button onclick="addRow('ali', 19, 'Lysaker', 'Utvikler')">Legg til ali</button>
+<button onclick="addRow('yumi', 29, 'Kautokeino', 'Designer')">Legg til yumi</button>
+
+<script>
+    function addRow(navn, alder, by, yrke) {
+        document.getElementById('myTable').innerHTML += `
+                <tr>
+                    <td>${navn}</td>
+                    <td>${alder}</td>
+                    <td>${by}</td>
+                    <td>${yrke}</td>
+                </tr>
+            `;
+    }
+</script>
+
+
+</body>
+</html>
