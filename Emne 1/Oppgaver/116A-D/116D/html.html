@@ -1,30 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCXVI</title>
+    <style>
+        div.trafficLight {
+            width: 3rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        div.light {
+            background-color: grey;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
 </head>
+
 <body>
+
+
+
+<div class="trafficLight">
+    <div class="light" style="background-color: red;"></div>
+    <div class="light" style="background-color: yellow;"></div>
+    <div class="light" style="background-color: green;"></div>
+</div>
+
 <script>
     
-let kort1 = null;  // Husker første kortet
-let kort2 = null; // Husker andre kortet
-
-function revealCard(id, imgFileName) {
-let kort = document.getElementById(id); // Finn kortet som ble trykket
-kort.innerHTML = `<img src="/img/${imgFileName}.jpg"/>`; // Vis bildet
-
-if (kort1 === null) {
-// Hvis vi ikke har trykket på et kort før, lagre dette kortet
-kort1 = kort;
-} else {
-// Hvis vi allerede har trykket på ett kort, lagre dette som kort nr. 2
-kort2 = kort;
-
 </script>
 
 
-
-$END$
 </body>
 </html>
